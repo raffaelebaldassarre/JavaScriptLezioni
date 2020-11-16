@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lezione 4</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section id="calcolo-biglietto">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="card-rounded">
+            <div class="row">
+                <div class="col">
+                    <label for="name">Nome e Cognome</label>
+                    <input type="text" name="name" id="full-name">
+                </div>
+                <div class="col">
+                    <label for="km">Km da percorrere</label>
+                    <input type="number" name="km" id="km">
+                </div>
+                <div class="col">
+                    <label for="fascia">Fascia di Etá</label>
+                    <select name="fascia" id="fascia">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="row">
+                <button id="btn-genera">Genera</button>
+                <button id="btn-annulla">Annulla</button>
+
+            </div>
+        </div>
+    </section>
+    <!-- /#calcolo-biglietto -->
+    <section id="biglietto">
+        <h2>Biglietto</h2>
+
+        <div id="nome-passeggero"></div>
+        <div id="sconto"></div>
+        <div id="carrozzza"></div>
+        <div id="codice-cp"></div>
+        <div id="ticket-price"></div>
+
+
+    </section>
+    <!-- /#biglietto -->
+
+    <script type="text/javascript" src="./assets/js/ticket.js"></script>
+
+</body>
+
+</html>
