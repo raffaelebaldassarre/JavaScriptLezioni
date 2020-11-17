@@ -3,14 +3,16 @@ var btnAnnulla = document.getElementById('btn-annulla');
 
 
 btnGenera.addEventListener("click", function () {
-    var offer = "Standard Ticket";
+    
     // Genera ticket
     console.log("Genera il Ticket");
-
+    
+    var offer = "Standard Ticket";
     // Selezionare valore degli input 
     var fullNameInput = document.getElementById('full-name');
     var kmInput = document.getElementById('km');
     var fasciaInput = document.getElementById('fascia');
+    
     // Seleziona i valori
     var fullName = fullNameInput.value;
     var km = kmInput.value;
@@ -46,7 +48,8 @@ btnGenera.addEventListener("click", function () {
     elTicket.innerHTML = "£" + ticketPrice; 
     elCarrozza.innerHTML =  numberCarrozza;
     elCodice.innerHTML = codiceCp;
-    document.getElementById('biglietto').style.display = "block";
+
+    //document.getElementById('biglietto').classList.add("visible");
 
 
 });
@@ -54,15 +57,14 @@ btnGenera.addEventListener("click", function () {
 btnAnnulla.addEventListener("click", function () {
     // Annulla
     console.log("Annulla operazione");
-    document.getElementById('biglietto').style.display = "none";
-
-    var fullNameInput = document.getElementById('full-name');
-    var kmInput = document.getElementById('km');
-    var fasciaInput = document.getElementById('fascia');
-
-    fullNameInput.value = "";
-    kmInput.value = "";
-    //fasciaInput = "minorenne";
+    
+    //document.getElementById('biglietto').classList.remove("visible");
+    document.getElementById('biglietto').classList.add("hidden");
+    
+    
+    document.getElementById('full-name').value = "";
+    document.getElementById('km').value = "";
+    document.getElementById('fascia').value = "";
 
 });
 
