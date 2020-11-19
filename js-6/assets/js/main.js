@@ -173,6 +173,9 @@ var playing = true; // Inizializzare loop
 while (playing) {
     // codice 
     prompt("Insert a number");
+
+
+    
     // Istruzione per terminare
     var keepPlaying = prompt(" Voui continuare a giocare? [Y/N]")
     if ( keepPlaying.toUpperCase() == "N") {
