@@ -17,7 +17,7 @@ var counter = 0;
 while (counter < 5) {
     var numeroUtente = Number(prompt("Insert a number"));
     sum += numeroUtente; 
-    //sum = sum + numeroUtente; versione estesa
+    //sum = sum + numeroUtente; //versione estesa
     counter++;
 }
 
