@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    border-radius: 100%;
+    background: orange;
+}
+div > span {
+    display: none;
+}
