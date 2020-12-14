@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS Intro</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <h1>Welcome VueJS</h1>
+
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" v-model="name">
+
+        <label for="surname">Cognome: </label>
+        <input type="text" name="surname" id="surname" v-model="surname">
+
+        <!--   <p> Ciao {{ name + " " + surname }}</p> -->
+        <p> Ciao {{ `${name} ${surname} `}}</p>
+
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
